@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>colorchanger</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="tot">
+        <header>
+            <label for="stop-animation">
+                <button id="stop">Stop Animation</button>
+                <label for="start-animation">
+                    <button id="start">Start Animation</button>
+                </label>
+        </header>
+        <div id="titlu">
+            <h1 id="tiltu">Color Changer</h1>
+        </div>
+        <div id="culoare">
+            <button id="buton" onclick="changecolor()">Change color</button>
+            <button id="afla">Show colors</button>
+            <button id="defaultculoare">Default</button>
+        </div>
+        <div id="consolechat">
+            <div id="consola">
+                <textarea class="text" id='1' >Default</textarea>
+                <button class="but" id="tooltip" onclick="copy()" onmouseout="out()">
+                    <span class="tooltiptext">Copy to clipboard</span>
+                </button>
+            </div>
+            <div id="chat">
+                <input type="text" maxlength="22" placeholder="Type a command" onkeyup="submit()" id="scrie">
+                <button id="submit" onclick="scrie()">Submit</button>
+            </div>
+        </div>
+    </div>
+    <script src="colorchanger.js"></script>
+</body>
+
+</html>

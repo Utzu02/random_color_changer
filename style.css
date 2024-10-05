@@ -24,6 +24,7 @@
 
 body
 {
+    overflow: hidden;
     background-color:#476EA6;
     margin: 0 auto;
 }
@@ -143,10 +144,12 @@ body
     from{left:25px;}
 }
 #consola{
-    width: 500px;
+    left: 0;
+    width: 30vw;
     height: 500px;
     border: 1px solid #aaaac9;;
-    margin-top: -250px;
+    bottom: 7vh;
+    position: fixed;  
     overflow-x: hidden;
     overflow-y: auto;
     background-color: #aaaac9;
@@ -169,21 +172,24 @@ body
     width: 100%;
 }
 #scrie{
+    left: 0;
     font-size: 30px;
-    width: 400px;
-    height: 50px;
+    width: 23vw;
+    height: 7vh;
     outline: none;
     display: inline;
 }
 #submit{
     position: fixed;
     margin-left: -7px;
-    width: 100px;
+    width: 7vw;
     height: 56px;
 }
 #chat{
     position: fixed;
-    width: 505px;
+    width: 30vw;
+    height: 7vh;
+    bottom: 0;
 }
 ::-webkit-scrollbar {
     width: 15px;
